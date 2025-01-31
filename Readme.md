@@ -1,5 +1,5 @@
 Code for paper submission title:  Noise Tolerance of Distributionally Robust Learning
-We provide the two files where the introduced objects are computed. 
+We provide the main file where the introduced objects are computed. 
 The other files are publicaly available from previous works: 
 
 
