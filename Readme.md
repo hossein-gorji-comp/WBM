@@ -1,4 +1,4 @@
-**Code for paper submission title:  Noise Tolerance of Distributionally Robust Learning
+**Code for paper submission title:  Noise Tolerance of Distributionally Robust Learning. 
 We provide the main file where the introduced objects are computed. **
 
 Reproducibility: 
