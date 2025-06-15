@@ -179,13 +179,11 @@ class OT_loss(nn.Module):
         loss = torch.sum(pi * M)
         return loss
 
-l1_loss =  nn.MSELoss() #  nn.L1Loss() #
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-class Loss(nn.Module):
+class WBM_loss(nn.Module):
     def __init__(self, eps):
-        super(Loss, self).__init__()
+        super(WBM_loss, self).__init__()
         self.lambd = nn.Parameter( 10+torch.rand(1)) # 
         self.eps = eps
 
@@ -217,7 +215,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 var_rate = 1e-5
-loss_d = Loss(0.1)
+loss_d = WBM_loss(0.1)
 loss_d = loss_d.to(device)
 
 import pickle
